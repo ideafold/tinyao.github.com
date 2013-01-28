@@ -3654,12 +3654,7 @@ section a:hover {
 .nav-stacked {
   text-align: center;
   margin: 20px 10px;
-}
-.nav-stacked li a:hover {
-  background: transparent;
-  -webkit-transform: scale(3);
-  -moz-transform: scale(3);
-  transform: scale(3);
+  font-size: 22px;
 }
 footer .nav-pills a {
   padding: 5px 10px;
@@ -3679,8 +3674,11 @@ footer div {
 }
 @media (max-width: 767px) {
   .container {
-    margin-top: 30px;
+    margin-top: 70px;
     padding: 0 10px;
+  }
+  section {
+    margin: 10px 0;
   }
   .led-head {
     width: 50px;
