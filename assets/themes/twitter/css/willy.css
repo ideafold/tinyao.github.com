@@ -3677,3 +3677,14 @@ footer .nav-pills li.active a:hover {
 footer div {
   font-size: 12px;
 }
+@media (max-width: 767px) {
+  .brand {
+    float: left;
+  }
+  .brand .led-head {
+    width: 30px;
+  }
+  .nav-stacked li {
+    display: inline-block;
+  }
+}
