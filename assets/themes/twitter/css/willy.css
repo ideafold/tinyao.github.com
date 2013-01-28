@@ -3661,8 +3661,9 @@ section a:hover {
 }
 .nav-stacked li a:hover {
   background: transparent;
-  font-size: 40px;
-  position: absolute;
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  transform: scale(3);
 }
 footer .nav-pills a {
   padding: 5px 10px;
