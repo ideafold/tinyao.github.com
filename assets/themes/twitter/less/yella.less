@@ -91,6 +91,25 @@ a.text-success:hover { color: darken(@state-success-text, 10%); }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
 
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 (@line-height-base / 2) 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: @line-height-base;
+}
+
 // List options
 // Unstyled keeps list items block level, just removes list-style
 .list-unstyled,
