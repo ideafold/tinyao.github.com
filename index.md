@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Kyle Style
-tagline: Deep thoughts
+title: Deep thoughts
+tagline: 
 ---
 {% include JB/setup %}
 
