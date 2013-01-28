@@ -726,7 +726,7 @@ table {
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ae8400;
 }
 .table th {
   font-weight: bold;
@@ -743,7 +743,7 @@ table {
   border-top: 0;
 }
 .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ae8400;
 }
 .table .table {
   background-color: #c79700;
@@ -753,14 +753,14 @@ table {
   padding: 4px 5px;
 }
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #ae8400;
   border-collapse: separate;
   border-left: 0;
   border-radius: 4px;
 }
 .table-bordered th,
 .table-bordered td {
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #ae8400;
 }
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
@@ -817,11 +817,11 @@ table {
 }
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+  background-color: #bd8f00;
 }
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
-  background-color: #f5f5f5;
+  background-color: #b88b00;
 }
 table td[class*="span"],
 table th[class*="span"] {
@@ -898,8 +898,8 @@ input[type="color"],
   line-height: 20px;
   color: #555555;
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #bd8f00;
+  border: 1px solid #ae8400;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -966,7 +966,7 @@ input[type="file"] {
   line-height: 34px;
 }
 select {
-  border: 1px solid #cccccc;
+  border: 1px solid #ae8400;
 }
 select[multiple],
 select[size] {
@@ -983,8 +983,8 @@ input[type="checkbox"]:focus {
 .uneditable-input,
 .uneditable-textarea {
   color: #999999;
-  background-color: #fcfcfc;
-  border-color: #cccccc;
+  background-color: #b88b00;
+  border-color: #ae8400;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
   cursor: not-allowed;
@@ -999,15 +999,15 @@ input[type="checkbox"]:focus {
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #ae8400;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #ae8400;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #ae8400;
 }
 .radio,
 .checkbox {
@@ -1146,7 +1146,7 @@ fieldset[disabled] input,
 fieldset[disabled] select,
 fieldset[disabled] textarea {
   cursor: not-allowed;
-  background-color: #eeeeee;
+  background-color: #c29300;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled],
@@ -1215,7 +1215,7 @@ select:focus:invalid:focus {
   padding: 19px 20px 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  background-color: #c29300;
   border-top: 1px solid #e5e5e5;
 }
 .form-actions:before,
@@ -2393,14 +2393,14 @@ button.close {
   padding: 4px 12px;
   line-height: 20px;
   text-decoration: none;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #c29300;
+  border: 1px solid #b88b00;
   border-left-width: 0;
 }
 .pagination > li > a:hover,
 .pagination > .active > a,
 .pagination > .active > span {
-  background-color: #f5f5f5;
+  background-color: #bd8f00;
 }
 .pagination > .active > a,
 .pagination > .active > span {
@@ -3630,6 +3630,10 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+hr {
+  border-top: 0;
+  border-bottom: 1px solid #ae8400;
 }
 .led-head {
   opacity: 0.5;
