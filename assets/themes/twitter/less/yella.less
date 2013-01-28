@@ -50,6 +50,9 @@ footer {
 				color:  darken(@body-background, 15%);
 			}
 		}
+		li.active a:hover {
+			color:  darken(@body-background, 15%);
+		}
 	}
 	div {
 		font-size: 0.5em;
@@ -58,4 +61,157 @@ footer {
 .list-social {
 	margin: 5px;
 	font-size: 2em;
+}
+
+// Ex: 14px base font * 85% = about 12px
+small   { font-size: 85%; }
+
+strong  { font-weight: bold; }
+em      { font-style: italic; }
+cite    { font-style: normal; }
+
+// Utility classes
+.muted               { color: @grayLight; }
+a.muted:hover        { color: darken(@grayLight, 10%); }
+
+.text-warning        { color: @state-warning-text; }
+a.text-warning:hover { color: darken(@state-warning-text, 10%); }
+
+.text-error          { color: @state-error-text; }
+a.text-error:hover   { color: darken(@state-error-text, 10%); }
+
+.text-success        { color: @state-success-text; }
+a.text-success:hover { color: darken(@state-success-text, 10%); }
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+
+// List options
+// Unstyled keeps list items block level, just removes list-style
+.list-unstyled,
+// Inline turns list items into inline-block
+.list-inline {
+  margin-left: 0;
+  list-style: none;
+}
+// Single-line list items
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+// Description Lists
+dl {
+  margin-bottom: @line-height-base;
+}
+dt,
+dd {
+  line-height: @line-height-base;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: @line-height-base / 2;
+}
+// Horizontal layout (like forms)
+.dl-horizontal {
+  .clear_float(); // Ensure dl clears floats if empty dd elements present
+  dt {
+    float: left;
+    width: @component-offset-horizontal - 20;
+    clear: left;
+    text-align: right;
+    .text-overflow();
+  }
+  dd {
+    margin-left: @component-offset-horizontal;
+  }
+}
+
+// MISC
+// ----
+
+// Horizontal rules
+hr {
+  margin: @line-height-base 0;
+  border: 0;
+  border-top: 1px solid @hr-border;
+  border-bottom: 1px solid #fff;
+}
+
+// Abbreviations and acronyms
+abbr[title],
+// Added data-* attribute to help out our tooltip plugin, per https://github.com/twitter/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @grayLight;
+}
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 @line-height-base;
+  border-left: 5px solid @grayLighter;
+  p {
+    margin-bottom: 0;
+    font-size: @font-size-base * 1.25;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  small {
+    display: block;
+    line-height: @line-height-base;
+    color: @grayLight;
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid @grayLighter;
+    border-left: 0;
+    p,
+    small {
+      text-align: right;
+    }
+    small {
+      &:before {
+        content: '';
+      }
+      &:after {
+        content: '\00A0 \2014';
+      }
+    }
+  }
+}
+
+// Quotes
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+// Addresses
+address {
+  display: block;
+  margin-bottom: @line-height-base;
+  font-style: normal;
+  line-height: @line-height-base;
 }
