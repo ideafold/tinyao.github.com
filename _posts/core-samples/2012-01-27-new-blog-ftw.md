@@ -1,6 +1,7 @@
 ---
 layout: post
 category : general
+group: blog
 tags : [jekyll, bootstrap, markdown]
 ---
 {% include JB/setup %}

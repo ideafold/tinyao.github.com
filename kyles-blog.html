@@ -1,0 +1,17 @@
+---
+layout: page
+title : Blog
+header : Blog
+group: navigation
+---
+{% include JB/setup %}
+
+<ul class="posts list-unstyled">
+  {% for post in site.posts %}
+    <li>
+    	<h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h3>
+    	<div>{{ post.content | strip_html | truncatewords:75}}</div>
+    	<hr />
+    </li>
+  {% endfor %}
+</ul>

@@ -3,10 +3,15 @@
 }
 a {
 	.transition (all 1s ease-in-out);
-	
-	&:hover {
-		text-decoration: none;
-	}
+}
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #F5F5F5;
+	border-right: 1px solid #CCC;
+	z-index: -1;
 }
 hr {
 	border-top: 0;
@@ -20,22 +25,40 @@ hr {
 		opacity: 0.9;
 	}
 }
-header {
-	font-size: 40px;
-	line-height: 44px;
+.header {
+	position: relative;
+}
+.avatar {
+	position: absolute;
+	left: 34%;
+	top: -5%;
+	width: 30%;
+	border: 3px solid @body-background;
+}
+.small {
+	font-size: 0.5em;
 }
 section {
-	margin: 2em 0;
-	a {
-		&:hover {
-			border-bottom: 1px dotted;
-		}
+	margin: 0 0 2em 0;
+}
+.header-color {
+	background-color: @btn-background-primary;
+	color: #FFF;
+	padding: 40px 30px;
+	margin: 0 0 10px 0;
+}
+.list-inline {
+	.img-thumbnail {
+		margin-right: 5px;
+		margin-bottom: 5px;
+		width: 100px;
 	}
 }
-.nav-stacked {
-	text-align: center;
-	margin: 20px 10px;
-	font-size: 22px;
+.list-labels {
+	margin-bottom: 0;
+	li {
+		margin-bottom: 4px;
+	}
 }
 footer {
 	.nav-pills {
@@ -57,32 +80,19 @@ footer {
 		font-size: 12px;
 	}
 }
-
-@media (max-width: 767px) {
-	.container {
-		margin-top: 70px;
-		padding: 0 10px;
+@media (min-width: 768px) and (max-width: 1080px) {
+	.list-inline {
+		.img-thumbnail {
+			width: 70px;
+		}
 	}
-	section {
-		margin: 10px 0;
-	}
-	.led-head {
-		width: 50px;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-	}
-	.nav-stacked {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		margin: 0;
-	}
-	header {
-		font-size: 24px;
-		line-height: 26px
-	}
-	.nav-stacked li {
-		display: inline-block;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	.header {
+		font-size: 80%;
+		
+		.well {
+			margin-bottom: 5px;
+		}
 	}
 }

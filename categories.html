@@ -2,7 +2,7 @@
 layout: page
 title: Categories
 header: Posts By Category
-group: navigation
+group: blog
 ---
 {% include JB/setup %}
 
@@ -14,7 +14,7 @@ group: navigation
 
 {% for category in site.categories %} 
   <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  <ul>
+  <ul class="nav nav-list">
     {% assign pages_list = category[1] %}  
     {% include JB/pages_list %}
   </ul>
