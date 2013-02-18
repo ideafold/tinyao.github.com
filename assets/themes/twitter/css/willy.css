@@ -4734,6 +4734,7 @@ hr {
   top: -5%;
   width: 30%;
   border: 3px solid #ffffff;
+  max-width: 220px;
 }
 .small {
   font-size: 0.5em;
