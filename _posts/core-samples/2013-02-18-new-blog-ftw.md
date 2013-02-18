@@ -37,6 +37,10 @@ In Joomla sites I always find myself turning off JCE/TinyMCE throughout writing 
 #### Bonus: Free Hosting & Backups
 Oh yeah, Github happens to be a versioned repository and hosting is free.
 
+### Shortcomings (had to be some right?)
+I can't figure out how to order the damn left nav! :)
+
+---
 
 
 ### References
