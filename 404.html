@@ -1,1 +1,15 @@
-Sorry this page does not exist =(
+---
+layout: page
+title: 404 
+header: 404 Not Found
+group: 
+---
+{% include JB/setup %}
+
+<h2>Snap I bet I broke that...</h2>
+<p class="alert">If you're looking for the Joomla 3 JUI site, it's moved to: <a href="http://jui.kyleledbetter.com/">http://jui.kyleledbetter.com/</a></p>
+<p>Hopefully one of these helps:</p>
+<ul class="nav nav-list">
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+</ul>
