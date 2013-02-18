@@ -2,7 +2,7 @@
 layout: post
 category : general
 group: blog
-tags : [jekyll, bootstrap, markdown]
+tags : [jekyll, bootstrap, markdown, github]
 ---
 {% include JB/setup %}
 
@@ -20,9 +20,26 @@ Jekyll is a parsing engine bundled as a ruby gem used to build static websites f
 
 ### Ok, then what is Jekyll Bootstrap?
 
-It's exactly what it sounds like. A Bootstrap theme slapped on top of Jekyll.
+It's exactly what it sounds like. A Bootstrap theme slapped on top of Jekyll. It's got a lot of other [cool features](http://jekyllbootstrap.com/).
+
+### New Tech & Toys
+
+I've been a web CMS guy for so long (and I still loves me some Joomla), but it was time for a change. I love bleeding-edge tech and always want to try new shiny things. I also have what I call "web-ADHD" (squirrel!). These are probably the reasons I've done well in business and work, but these are also the reasons I had to change. Learning how to build on Github pages, Jekyll and a bit of Ruby has been really fun.
+
+### New Workflows
+
+In Joomla sites I always find myself turning off JCE/TinyMCE throughout writing a blog post. I also think if you need more than markdown in a blog you're probably doint it wrong. Lastly for "static" pages I'd rather develop them offline in Coda 2 or Espresso instead of cramming all that html into a Joomla article. These are many of the reasons I'm thrilled about my new workflow:
+
+1. Write post locally in markdown using [Mou](http://mouapp.com/)
+2. Save > Commit > Push to Github master using [Tower](http://www.git-tower.com/)
+3. Enjoy coffee and/or beer
+
+#### Bonus: Free Hosting & Backups
+Oh yeah, Github happens to be a versioned repository and hosting is free.
+
+
 
 ### References
 
-[Github Pages](http://pages.github.com/)
+[Github Pages](http://pages.github.com/) / 
 [Jekyll Bootstrap](http://jekyllbootstrap.com/)
