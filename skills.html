@@ -6,3 +6,174 @@ group: navigation
 ---
 {% include JB/setup %}
 <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+<div class="row-fluid">
+	<div class="span6">
+		<h4 class="page-header">Skill Breakdown</h4>
+		<div class="progress active">
+			<div class="progress-bar progress-bar-success active" style="width:98%">UX/UI Design</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" style="width:96%">HTML/CSS/LESS</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" style="width:94%">Joomla</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-primary" style="width:85%">Graphic Design</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-info" style="width:65%">Adobe Fireworks</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-info" style="width:55%">Adobe Illustrator</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-info" style="width:50%">Mobile App Design</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-warning" style="width:25%">PHP</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar progress-bar-danger" style="width:17%">JavaScript</div>
+		</div>
+	</div>
+	<div class="span6">
+		<h4 class="page-header">Examples</h4>
+		<ul class="nav nav-list">
+			<li><a href="http://joomla.org">Joomla.org Site &amp; Joomla 3.0 UI Design</a></li>
+			<li><a href="http://projectfork.net">Projectfork Site &amp; Software UI Design</a></li>
+			<li><a href="http://taptheme.com">TapTheme Site &amp; Mobile UI Design</a></li>
+			<li><a href="http://adminpraise.com">AdminPraise Site &amp; Admin UI Design</a></li>
+			<li><a href="http://dribbble.com/kyleledbetter">Dribbble Designer Portfolio</a></li>
+			<li><a href="http://appthe.me/">AppTheme Site &amp; UI Design</a></li>
+			<li><a href="http://grisgr.is/">Gris-Gris Site Design</a></li>
+		</ul>
+	</div>
+</div>
+<!-- Scripties -->
+		<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
+		<script src="{{ ASSET_PATH }}twitter/js/highcharts.js"></script>
+		<script>
+			$(function () {
+		    var chart;
+		    $(document).ready(function() {
+		    
+		        var colors = Highcharts.getOptions().colors,
+		            categories = ['UX', 'Adobe', 'Web', 'Graphics'],
+		            name = 'Browser brands',
+		            data = [{
+		                    y: 44,
+		                    color: colors[0],
+		                    drilldown: {
+		                        name: 'User Experience',
+		                        categories: ['UI Design', 'Information Architecture', 'User Interaction', 'Accessibility'],
+		                        data: [24, 7, 10, 3],
+		                        color: colors[0]
+		                    }
+		                }, {
+		                    y: 22,
+		                    color: colors[1],
+		                    drilldown: {
+		                        name: 'Adobe CS',
+		                        categories: ['Photoshop', 'Fireworks', 'Illustrator'],
+		                        data: [2, 11, 6],
+		                        color: colors[1]
+		                    }
+		                }, {
+		                    y: 21,
+		                    color: colors[2],
+		                    drilldown: {
+		                        name: 'Web Programming',
+		                        categories: ['CSS3', 'HTML5', 'LESS', 'PHP', 'jQuery'],
+		                        data: [7, 6, 3, 3, 1],
+		                        color: colors[2]
+		                    }
+		                }, {
+		                    y: 12,
+		                    color: colors[3],
+		                    drilldown: {
+		                        name: 'Graphic Design',
+		                        categories: ['Logos',
+		                            'Icons', 'Brochures'],
+		                        data: [6, 4, 1],
+		                        color: colors[3]
+		                    }
+		                }];
+		    
+		    
+		        // Build the data arrays
+		        var browserData = [];
+		        var versionsData = [];
+		        for (var i = 0; i < data.length; i++) {
+		    
+		            // add browser data
+		            browserData.push({
+		                name: categories[i],
+		                y: data[i].y,
+		                color: data[i].color
+		            });
+		    
+		            // add version data
+		            for (var j = 0; j < data[i].drilldown.data.length; j++) {
+		                var brightness = 0.2 - (j / data[i].drilldown.data.length) / 5 ;
+		                versionsData.push({
+		                    name: data[i].drilldown.categories[j],
+		                    y: data[i].drilldown.data[j],
+		                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
+		                });
+		            }
+		        }
+		    
+		        // Create the chart
+		        chart = new Highcharts.Chart({
+		            chart: {
+		                renderTo: 'container',
+		                type: 'pie'
+		            },
+		            title: {
+		                text: 'Kyle Ledbetter \'s Skillset'
+		            },
+		            yAxis: {
+		                title: {
+		                    text: 'Total percent market share'
+		                }
+		            },
+		            plotOptions: {
+		                pie: {
+		                    shadow: false
+		                }
+		            },
+		            credits: {
+			            enabled: false
+		            },
+		            tooltip: {
+		        	    valueSuffix: '%'
+		            },
+		            series: [{
+		                name: 'Browsers',
+		                data: browserData,
+		                size: '60%',
+		                dataLabels: {
+		                    formatter: function() {
+		                        return this.y > 5 ? this.point.name : null;
+		                    },
+		                    color: 'white',
+		                    distance: -30
+		                }
+		            }, {
+		                name: 'Versions',
+		                data: versionsData,
+		                innerSize: '60%',
+		                dataLabels: {
+		                    formatter: function() {
+		                        // display only if larger than 1
+		                        return this.y > 1 ? '<b>'+ this.point.name +':</b> '+ this.y +'%'  : null;
+		                    }
+		                }
+		            }]
+		        });
+		    });
+		    
+		});
+		</script>
+		

@@ -14,37 +14,25 @@ weight : 5
 			<div class="span8">
 				<ul class="list-unstyled">
 					<li><strong>Principal User Experience Designer</strong></li>
-					<li>MetaScale (Sears Brands LLC.) </li>
+					<li><span aria-hidden="true" class="icon-suitcase"></span> MetaScale (Sears Brands LLC.) </li>
 				</ul>
 			</div>
 			<div class="span4">
 				<ul class="list-unstyled">
 					<li><strong>Austin, Texas</strong></li>
-					<li>originally from Baton Rouge, LA</li>
+					<li><span aria-hidden="true" class="icon-location"></span> originally from Baton Rouge, LA</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="well well-small">
 		<div class="row-fluid clearfix">
-			<div class="span4">
-				<div class="progress">
-					<div class="progress-bar progress-bar-success" style="width:95%">UX/UI Design</div>
-				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-primary" style="width:85%">HTML5/CSS3/LESS/Bootstrap</div>
-				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-info" style="width:75%">Joomla 3.0 UX</div>
-				</div>
-				<div class="progress">
-					<div class="progress-bar progress-bar-warning" style="width:85%">Adobe Creative Suite</div>
-				</div>
+			<div class="span8">
 				<ul class="list-unstyled">
-					<li>UX/UI Design</li>
-					<li></li>
-					<li>Joomla User Experience</li>
-					<li>Adobe Creative Suite (FW)</li>
+					<li><span aria-hidden="true" class="icon-console"></span> UX/UI Design</li>
+					<li><span aria-hidden="true" class="icon-html5"></span> HTML5/CSS3/LESS/Bootstrap</li>
+					<li><span aria-hidden="true" class="icon-joomla"></span> Joomla User Experience</li>
+					<li><span aria-hidden="true" class="icon-paint-format"></span> Graphic Designer</li>
 				</ul>
 			</div>
 			<div class="span4">
@@ -69,7 +57,7 @@ weight : 5
 </div>
 <div class="row-fluid">
 	<div class="span6">
-		<h3 class="page-header">Recent Activity</h3>
+		<h3 class="page-header">Recent Blogs</h3>
 		<ul class="posts list-unstyled">
 		  {% for post in site.posts %}
 		    <li><span class="muted pull-right">{{ post.date | date_to_string }}</span> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><hr /></li>
@@ -81,3 +69,24 @@ weight : 5
 		<ul id="shotsByPlayerId" class="shotList list-inline"></ul>
 	</div>
 </div>
+
+<!-- Scripties -->
+<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}twitter/js/jquery.jribbble-1.0.0.ugly.js"></script>
+<script>
+$(document).ready(function () {	
+	$.jribbble.getShotsByPlayerId('kyleledbetter', function (playerShots) {
+    var html = [];
+
+    $.each(playerShots.shots, function (i, shot) {
+        html.push('<li>');
+        html.push('<a href="' + shot.url + '">');
+        html.push('<img class="img-thumbnail" src="' + shot.image_teaser_url + '" ');
+        html.push('alt="' + shot.title + '"> </a> </li>');
+    });
+
+    $('#shotsByPlayerId').html(html.join(''));
+	}, {page: 1, per_page: 6});
+});
+</script>
+		

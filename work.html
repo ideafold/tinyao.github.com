@@ -5,18 +5,134 @@ header : Work
 group: navigation
 ---
 {% include JB/setup %}
+<div class="gantt"></div>
+<h4 class="page-header">Notables</h4>
+<h5>MetaScale <small>2012 - Present</small></h5>
+<ul class="list-unstyled">
+	<li>Designed modern, Bootstrap-based UI for massive Joomla intranet</li>
+	<li>Designed new MetaScale Analytics UI framework for products ranging from trends, segments, activity stream, and every UI you can imagine.</li>
+</ul>
+<hr />
+<h5>eBay, Inc. <small>2011 - 2012</small></h5>
+<ul class="list-unstyled">
+	<li>Designed completely new UI for an internal analytics platform
+	which modernized UI, improved navigation and information
+	architecture and improved UX across the board.</li>
+	<li>Implemented responsive web design (RWD) for analytics platform Projectfork site which optimized UX for tablets and phones.
+	Joomla.org site Joomla 3.0 UI
+	- Implemented a UI library based on Bootstrap, Joomla, and modern HTML5 and CSS3 standards which completely optimized the product development workflow end to end.</li>
+	<li>Designed UI and UX for an analytics iPad app built on Microstrategy that delivers robust company metrics in a simple layout for executives.</li>
+	<li>Designed nearly every imaginable UI for a site which delivers everything from news articles to complex multi-step wizards and administrative panels</li>
+</ul>
+<hr />
+<h5>Joomla CMS &amp; Joomla.org <small>2010 - 2012</small></h5>
+<ul class="list-unstyled">
+	<li>Started an international, grassroots campaign called the “Joomla User Experience” that lead to an official UX working group</li>
+	<li>Delivered an entirely new UI and UX to Joomla 3.0, which has recently launched and is receiving critical acclaim</li>
+	<li>Redesigned Joomla.org homepage and unified all Joomla sites to match the new brand</li>
+</ul>
+<hr />
+<h5>Pixel Praise <small>2002 - 2013</small></h5>
+<ul class="list-unstyled">
+	<li>Projectfork: Designed UI for open source project management extensions with unique UI’s for projects, milestones, tasks, files, calendar, discussions, user groups, reporting and activity stream</li>
+	<li>TapTheme: Designed UI for customized mobile UX on iPad, iPhone and Android devices.</li>
+	<li>AdminPraise: Several custom administrator GUI templates for Joomla, which ultimately led to recognize the need for the new UI Joomla received in Joomla 3.0</li>
+</ul>
 
-<div class="row">
-	<div class="span4">
-		<h4>Work</h4>
+<!-- Scripties -->
+<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}twitter/js/jquery.fn.gantt.min.js"></script>
+
+<script>
+	// gantt
+	
+
+
+$(function() {
+	"use strict";
+
+	$(".gantt").gantt({
+		source: [{
+			name: "MetaScale",
+			desc: "Principal UX Designer",
+			values: [{
+				from: "/Date(1330192000000)/",
+				to: "/Date(1370401600000)/",
+				label: "MetaScale UX Designer", 
+				customClass: "ganttOrange"
+			}]
+		},{
+			name: "eBay",
+			desc: "Principal Usability Engineer",
+			values: [{
+				from: "/Date(1270802400000)/",
+				to: "/Date(1330192000000)/",
+				label: "eBay Usability Engineer", 
+				customClass: "ganttBlue"
+			}]
+		},{
+			name: "Joomla",
+			desc: "UX Team Lead",
+			values: [{
+				from: "/Date(1290802400000)/",
+				to: "/Date(1340192000000)/",
+				label: "Joomla UX Team Lead", 
+				customClass: "ganttGreen"
+			}]
+		},{
+			name: "Pixel Praise",
+			desc: "Projectfork",
+			values: [{
+				from: "/Date(1150802400000)/",
+				to: "/Date(1370401600000)/",
+				label: "Projectfork", 
+				customClass: "ganttRed"
+			}]
+		},{
+			name: " ",
+			desc: "TapTheme",
+			values: [{
+				from: "/Date(1220802400000)/",
+				to: "/Date(1280802400000)/",
+				label: "TapTheme", 
+				customClass: "ganttRed"
+			}]
+		},{
+			name: " ",
+			desc: "AdminPraise",
+			values: [{
+				from: "/Date(1170802400000)/",
+				to: "/Date(1290802400000)/",
+				label: "AdminPraise", 
+				customClass: "ganttRed"
+			}]
+		},{
+			name: " ",
+			desc: "JoomlaPraise",
+			values: [{
+				from: "/Date(1110802400000)/",
+				to: "/Date(1170802400000)/",
+				label: "JoomlaPraise", 
+				customClass: "ganttRed"
+			}]
+		},{
+			name: " ",
+			desc: "Client Work",
+			values: [{
+				from: "/Date(1010802400000)/",
+				to: "/Date(1130802400000)/",
+				label: "Pixel Praise Client Work", 
+				customClass: "ganttRed"
+			}]
+		}],
+		navigate: "scroll",
+		scale: "months",
+		maxScale: "months",
+		minScale: "weeks",
+		itemsPerPage: 10
 		
-	</div>
-	<div class="span4">
-		<h4>Play</h4>
-		
-	</div>
-	<div class="span4">
-		<h4>Kyle</h4>
-		
-	</div>
-</div>
+	});
+
+});
+
+</script>

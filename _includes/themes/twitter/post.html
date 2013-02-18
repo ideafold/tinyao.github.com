@@ -1,7 +1,8 @@
 {% if page.title %} <h1 class="header-color"> {{ page.title }}</h1>{% endif %}
 
-  	<a href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}twitter/images/kyle-ledbetter.jpg" class="img-circle" width="30"/></a> Kyle Ledbetter on {{ page.date | date_to_string }}
-  	<hr />
+  	<div class="well well-small">
+  		<a href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}twitter/images/kyle-ledbetter.jpg" class="img-circle" width="30"/></a> Kyle Ledbetter on {{ page.date | date_to_string }}
+  	</div>
     {{ content }}
     <hr>
 	<ul class="pagination">

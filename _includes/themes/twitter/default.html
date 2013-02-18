@@ -41,7 +41,8 @@
 				<div class="span9">
 					<div class="page-header">
 						<div class="media">
-							<ul class="list-inline pull-right media-object">
+							<ul class="nav nav-pills pull-right">
+								<li><a href="http://dribbble.com/kyleledbetter"><span aria-hidden="true" class="icon-dribbble"></span></a></li>
 								<li><a href="http://github.com/kyleledbetter"><span aria-hidden="true" class="icon-github"></span></a></li>
 								<li><a href="http://twitter.com/kyleledbetter"><span aria-hidden="true" class="icon-twitter"></span></a></li>
 								<li><a href="http://www.linkedin.com/pub/kyle-ledbetter/4/1b8/877/"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
@@ -72,150 +73,9 @@
 				</div>
 			</div>
 		</div>
-		{% include JB/analytics %}
-		<!-- Scripties -->
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-		<script src="{{ ASSET_PATH }}/js/jquery.jribbble-1.0.0.ugly.js"></script>
-		<script src="http://code.highcharts.com/highcharts.js"></script>
-		<script>
-		$(document).ready(function () {	
-			$.jribbble.getShotsByPlayerId('kyleledbetter', function (playerShots) {
-		    var html = [];
-		
-		    $.each(playerShots.shots, function (i, shot) {
-		        html.push('<li>');
-		        html.push('<a href="' + shot.url + '">');
-		        html.push('<img class="img-thumbnail" src="' + shot.image_teaser_url + '" ');
-		        html.push('alt="' + shot.title + '"> </a> </li>');
-		    });
-		
-		    $('#shotsByPlayerId').html(html.join(''));
-			}, {page: 1, per_page: 6});
-		});
-		</script>
-		<script>
-	$(function () {
-    var chart;
-    $(document).ready(function() {
-    
-        var colors = Highcharts.getOptions().colors,
-            categories = ['UX', 'Adobe', 'Web', 'Graphics'],
-            name = 'Browser brands',
-            data = [{
-                    y: 44,
-                    color: colors[0],
-                    drilldown: {
-                        name: 'User Experience',
-                        categories: ['UI Design', 'Information Architecture', 'User Interaction', 'Accessibility'],
-                        data: [24, 7, 10, 3],
-                        color: colors[0]
-                    }
-                }, {
-                    y: 22,
-                    color: colors[1],
-                    drilldown: {
-                        name: 'Adobe CS',
-                        categories: ['Photoshop', 'Fireworks', 'Illustrator'],
-                        data: [2, 11, 6],
-                        color: colors[1]
-                    }
-                }, {
-                    y: 21,
-                    color: colors[2],
-                    drilldown: {
-                        name: 'Web Programming',
-                        categories: ['CSS3', 'HTML5', 'LESS', 'PHP', 'jQuery'],
-                        data: [7, 6, 3, 3, 1],
-                        color: colors[2]
-                    }
-                }, {
-                    y: 12,
-                    color: colors[3],
-                    drilldown: {
-                        name: 'Graphic Design',
-                        categories: ['Logos',
-                            'Icons', 'Brochures'],
-                        data: [6, 4, 1],
-                        color: colors[3]
-                    }
-                }];
-    
-    
-        // Build the data arrays
-        var browserData = [];
-        var versionsData = [];
-        for (var i = 0; i < data.length; i++) {
-    
-            // add browser data
-            browserData.push({
-                name: categories[i],
-                y: data[i].y,
-                color: data[i].color
-            });
-    
-            // add version data
-            for (var j = 0; j < data[i].drilldown.data.length; j++) {
-                var brightness = 0.2 - (j / data[i].drilldown.data.length) / 5 ;
-                versionsData.push({
-                    name: data[i].drilldown.categories[j],
-                    y: data[i].drilldown.data[j],
-                    color: Highcharts.Color(data[i].color).brighten(brightness).get()
-                });
-            }
-        }
-    
-        // Create the chart
-        chart = new Highcharts.Chart({
-            chart: {
-                renderTo: 'container',
-                type: 'pie'
-            },
-            title: {
-                text: 'Kyle Ledbetter \'s Skillset'
-            },
-            yAxis: {
-                title: {
-                    text: 'Total percent market share'
-                }
-            },
-            plotOptions: {
-                pie: {
-                    shadow: false
-                }
-            },
-            credits: {
-	            enabled: false
-            },
-            tooltip: {
-        	    valueSuffix: '%'
-            },
-            series: [{
-                name: 'Browsers',
-                data: browserData,
-                size: '60%',
-                dataLabels: {
-                    formatter: function() {
-                        return this.y > 5 ? this.point.name : null;
-                    },
-                    color: 'white',
-                    distance: -30
-                }
-            }, {
-                name: 'Versions',
-                data: versionsData,
-                innerSize: '60%',
-                dataLabels: {
-                    formatter: function() {
-                        // display only if larger than 1
-                        return this.y > 1 ? '<b>'+ this.point.name +':</b> '+ this.y +'%'  : null;
-                    }
-                }
-            }]
-        });
-    });
-    
-});
-</script>
 		<div class="span3 sidebar hidden-phone"></div>
+		{% include JB/analytics %}
+		
+		
 	</body>
 </html>
