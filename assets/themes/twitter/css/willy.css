@@ -4695,7 +4695,14 @@ a {
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-.sidebar {
+.sidebar .nav-list > li > a {
+  margin-bottom: -1px;
+  border-right: 0;
+  border-left: 0;
+  margin-right: -9px;
+  margin-left: -10px;
+}
+.sidebar-style {
   position: fixed;
   left: 0;
   top: 0;
