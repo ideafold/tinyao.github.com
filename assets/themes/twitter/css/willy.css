@@ -1525,14 +1525,14 @@ fieldset[disabled] .btn:active {
   border-color: #a7a9aa;
 }
 .btn-primary {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #187cdb;
+  border-color: #187cdb;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background-color: #357ebd;
-  border-color: #3071a9;
+  background-color: #156fc4;
+  border-color: #1362ad;
 }
 .btn-primary.disabled:hover,
 .btn-primary[disabled]:hover,
@@ -1543,18 +1543,18 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled:active,
 .btn-primary[disabled]:active,
 fieldset[disabled] .btn-primary:active {
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #187cdb;
+  border-color: #187cdb;
 }
 .btn-warning {
-  background-color: #f0ad4e;
-  border-color: #f0ad4e;
+  background-color: #fc7136;
+  border-color: #fc7136;
 }
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active {
-  background-color: #eea236;
-  border-color: #ec971f;
+  background-color: #fc5f1d;
+  border-color: #fb4e04;
 }
 .btn-warning.disabled:hover,
 .btn-warning[disabled]:hover,
@@ -1565,18 +1565,18 @@ fieldset[disabled] .btn-warning:focus,
 .btn-warning.disabled:active,
 .btn-warning[disabled]:active,
 fieldset[disabled] .btn-warning:active {
-  background-color: #f0ad4e;
-  border-color: #f0ad4e;
+  background-color: #fc7136;
+  border-color: #fc7136;
 }
 .btn-danger {
-  background-color: #d9534f;
-  border-color: #d9534f;
+  background-color: #d93419;
+  border-color: #d93419;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active {
-  background-color: #d43f3a;
-  border-color: #c9302c;
+  background-color: #c22f16;
+  border-color: #ab2914;
 }
 .btn-danger.disabled:hover,
 .btn-danger[disabled]:hover,
@@ -1587,18 +1587,18 @@ fieldset[disabled] .btn-danger:focus,
 .btn-danger.disabled:active,
 .btn-danger[disabled]:active,
 fieldset[disabled] .btn-danger:active {
-  background-color: #d9534f;
-  border-color: #d9534f;
+  background-color: #d93419;
+  border-color: #d93419;
 }
 .btn-success {
-  background-color: #5cb85c;
-  border-color: #5cb85c;
+  background-color: #90c842;
+  border-color: #90c842;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active {
-  background-color: #4cae4c;
-  border-color: #449d44;
+  background-color: #83ba36;
+  border-color: #75a730;
 }
 .btn-success.disabled:hover,
 .btn-success[disabled]:hover,
@@ -1609,18 +1609,18 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled:active,
 .btn-success[disabled]:active,
 fieldset[disabled] .btn-success:active {
-  background-color: #5cb85c;
-  border-color: #5cb85c;
+  background-color: #90c842;
+  border-color: #90c842;
 }
 .btn-info {
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: #17c0dc;
+  border-color: #17c0dc;
 }
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active {
-  background-color: #46b8da;
-  border-color: #31b0d5;
+  background-color: #15acc5;
+  border-color: #1298ae;
 }
 .btn-info.disabled:hover,
 .btn-info[disabled]:hover,
@@ -1631,8 +1631,8 @@ fieldset[disabled] .btn-info:focus,
 .btn-info.disabled:active,
 .btn-info[disabled]:active,
 fieldset[disabled] .btn-info:active {
-  background-color: #5bc0de;
-  border-color: #5bc0de;
+  background-color: #17c0dc;
+  border-color: #17c0dc;
 }
 .btn-link,
 .btn-link:active,
@@ -3685,7 +3685,7 @@ a.counter:focus {
   color: #fff;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #428bca;
+  background-color: #187cdb;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-sizing: border-box;
@@ -3697,7 +3697,7 @@ a.counter:focus {
   transition: width 0.6s ease;
 }
 .progress-striped .progress-bar {
-  background-color: #428bca;
+  background-color: #187cdb;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3716,10 +3716,10 @@ a.counter:focus {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-danger {
-  background-color: #d9534f;
+  background-color: #d93419;
 }
 .progress-striped .progress-bar-danger {
-  background-color: #d9534f;
+  background-color: #d93419;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3727,10 +3727,10 @@ a.counter:focus {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #90c842;
 }
 .progress-striped .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #90c842;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3738,10 +3738,10 @@ a.counter:focus {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-warning {
-  background-color: #f0ad4e;
+  background-color: #fc7136;
 }
 .progress-striped .progress-bar-warning {
-  background-color: #f0ad4e;
+  background-color: #fc7136;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3749,10 +3749,10 @@ a.counter:focus {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #5bc0de;
+  background-color: #17c0dc;
 }
 .progress-striped .progress-bar-info {
-  background-color: #5bc0de;
+  background-color: #17c0dc;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -4094,35 +4094,35 @@ a.badge:hover {
 }
 .label-important,
 .badge-important {
-  background-color: #d9534f;
+  background-color: #d93419;
 }
 .label-important[href],
 .badge-important[href] {
-  background-color: #c9302c;
+  background-color: #ab2914;
 }
 .label-warning,
 .badge-warning {
-  background-color: #f0ad4e;
+  background-color: #fc7136;
 }
 .label-warning[href],
 .badge-warning[href] {
-  background-color: #ec971f;
+  background-color: #fb4e04;
 }
 .label-success,
 .badge-success {
-  background-color: #5cb85c;
+  background-color: #90c842;
 }
 .label-success[href],
 .badge-success[href] {
-  background-color: #449d44;
+  background-color: #75a730;
 }
 .label-info,
 .badge-info {
-  background-color: #5bc0de;
+  background-color: #17c0dc;
 }
 .label-info[href],
 .badge-info[href] {
-  background-color: #31b0d5;
+  background-color: #1298ae;
 }
 .label-inverse,
 .badge-inverse {
@@ -4134,11 +4134,11 @@ a.badge:hover {
 }
 .label-primary,
 .badge-primary {
-  background-color: #428bca;
+  background-color: #187cdb;
 }
 .label-primary[href],
 .badge-primary[href] {
-  background-color: #3071a9;
+  background-color: #1362ad;
 }
 .btn .label,
 .btn .badge {
