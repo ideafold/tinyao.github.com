@@ -11,6 +11,23 @@ a {
 	  border-left: 0;
 	  margin-right: -9px;
 	  margin-left: -10px;
+	  color: #777;
+	}
+	.nav-list > .active > a,
+	.nav-list > .active > a:hover,
+	.nav-list > .active > a:focus {
+	  color: @grayDark;
+	  background-color: @grayLighter;
+	  border-color: darken(@grayLighter, 5%);
+	}
+}
+.nav-social {
+	margin-top: 4px;
+	
+	& > li > a {
+		color: @gray;
+		font-size: 16px;
+		padding: 4px;
 	}
 }
 .sidebar-style {
@@ -42,8 +59,9 @@ hr {
 	left: 34%;
 	top: -5%;
 	width: 30%;
-	border: 3px solid @body-background;
+	border: 3px solid #FFF;
 	max-width: 220px;
+	border-radius: 100%;
 }
 .small {
 	font-size: 0.5em;
@@ -52,7 +70,7 @@ section {
 	margin: 0 0 2em 0;
 }
 .header-color {
-	background-color: @btn-background-primary;
+	background-color: @link-color;
 	color: #FFF;
 	padding: 40px 30px;
 	margin: 0 0 10px 0;
