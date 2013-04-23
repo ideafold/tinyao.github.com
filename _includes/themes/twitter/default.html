@@ -19,12 +19,24 @@
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-17659530-1']);
 			_gaq.push(['_trackPageview']);
-			
+
 			(function() {
 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
+		</script>
+
+		<script type="text/javascript">
+		        var _StatHat = _StatHat || [];
+		        _StatHat.push(['_setUser', 'MzUwNCC_01cwI-f17_CWHlIxOLQh']);
+		        (function() {
+		                var sh = document.createElement('script'); sh.type = 'text/javascript';
+		                sh.async = true;
+		                sh.src = '//www.stathat.com/javascripts/api.js';
+		                var s = document.getElementsByTagName('script')[0];
+		                s.parentNode.insertBefore(sh, s);
+		        })();
 		</script>
 	</head>
 	<body>
@@ -33,7 +45,7 @@
 				<div class="span3 sidebar">
 					<div class="page-header">
 						<div class="media">
-							<a class="pull-left media-object" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/images/kyle-ledbetter.jpg" class="led-head img-circle" width="30"/></a> 
+							<a class="pull-left media-object" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/images/kyle-ledbetter.jpg" class="led-head img-circle" width="30"/></a>
 							<div class="media-body">
 								<h3 class="media-heading hidden-phone">Navigation</h3>
 								<h3 class="media-heading visible-phone">Kyle Ledbetter</h3>
@@ -74,7 +86,7 @@
 							<li><a href="/z-sitemap.html">Sitemap</a></li>
 						</ul>
 						<div>
-							&copy; {{ site.author.name }} 2012 
+							&copy; {{ site.author.name }} 2012
 							with a little love from <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a>, <a href="http://pages.github.com/" target="_blank">Github Pages</a>
 							and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
 						</div>
@@ -84,7 +96,7 @@
 		</div>
 		<div class="span3 sidebar-style hidden-phone"></div>
 		{% include JB/analytics %}
-		
-		
+		<script type="text/javascript">_StatHat.push(['_trackCount', '2RUPaiwmHS_dTII7oMeBbiBSNHhN', 13.0]);</script>
+
 	</body>
 </html>
