@@ -9,14 +9,14 @@ tags : [dribbble, chrome]
 It's been a while (not like the Staind song). Thought I'd share a couple of Chrome extensions I use every day that Dribbble even better.
 
 ## Benchwarmer
-<img src="{{ BASE_PATH }}/images/dribbble/dribbble1.png" />
+<img src="{{ BASE_PATH }}/assets/images/dribbble/dribbble1.png" />
 
 Benchwarmer commandeers your default Chrome tab and injects Dribbble goodness in its place. It's got infinite scroll and you can log in to see your Following shots.
 
 [Install Benchwarmer](https://chrome.google.com/webstore/detail/benchwarmer-dribbble-tab/lhdjhhpjicomphhjpehdhjenbaamdpnn) from [Tiny Factor](http://www.tinyfactory.co/).
 
 ## Dribbble HD
-<img src="{{ BASE_PATH }}/images/dribbble/dribbble1.png" />
+<img src="{{ BASE_PATH }}/assets/images/dribbble/dribbble1.png" />
 
 Ever wish the Dribbble shots were larger while browsing? You're not alone. Dribbble HD cleverly takes advantage of the 2x image sizes and loads them instead, for 2 bigger columns of "HD" loveliness.
 
