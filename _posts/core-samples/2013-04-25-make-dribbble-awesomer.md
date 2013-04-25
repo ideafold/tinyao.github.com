@@ -16,7 +16,7 @@ Benchwarmer commandeers your default Chrome tab and injects Dribbble goodness in
 [Install Benchwarmer](https://chrome.google.com/webstore/detail/benchwarmer-dribbble-tab/lhdjhhpjicomphhjpehdhjenbaamdpnn) from [Tiny Factor](http://www.tinyfactory.co/).
 
 ## Dribbble HD
-<img src="{{ BASE_PATH }}/assets/images/dribbble/dribbble1.png" />
+<img src="{{ BASE_PATH }}/assets/images/dribbble/dribbble2.png" />
 
 Ever wish the Dribbble shots were larger while browsing? You're not alone. Dribbble HD cleverly takes advantage of the 2x image sizes and loads them instead, for 2 bigger columns of "HD" loveliness.
 
