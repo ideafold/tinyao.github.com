@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ site.author.name }} {{ page.title }}</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{{ page.description }}">
 		<meta name="author" content="{{ site.author.name }}">
@@ -47,8 +47,8 @@
 						<div class="media">
 							<a class="pull-left media-object" href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}/images/kyle-ledbetter.jpg" class="led-head img-circle" width="30"/></a>
 							<div class="media-body">
-								<h3 class="media-heading hidden-phone">Navigation</h3>
-								<h3 class="media-heading visible-phone">Kyle Ledbetter</h3>
+                <h3 class="media-heading hidden-phone">{{ site.title }}</h3>
+                <h3 class="media-heading visible-phone">{{ site.title }}</h3>
 							</div>
 						</div>
 					</div>
@@ -63,14 +63,16 @@
 						<div class="media">
 							<ul class="nav nav-pills nav-social pull-right">
 								<li><a href="http://dribbble.com/kyleledbetter"><span aria-hidden="true" class="icon-dribbble"></span></a></li>
-								<li><a href="http://github.com/kyleledbetter"><span aria-hidden="true" class="icon-github"></span></a></li>
-								<li><a href="http://twitter.com/kyleledbetter"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+                <li><a href="https://github.com/{{ site.author.github }}"><span aria-hidden="true" class="icon-github"></span></a></li>
+                <li><a href="https://twitter.com/{{ site.author.twitter }}"><span aria-hidden="true" class="icon-twitter"></span></a></li>
 								<li><a href="http://www.linkedin.com/pub/kyle-ledbetter/4/1b8/877/"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
-								<li><a href="mailto:kyle@kyleledbetter.com"><span aria-hidden="true" class="icon-mail"></span></a></li>
+								<li><a href="mailto:cz.tinyao@gmail.com"><span aria-hidden="true" class="icon-mail"></span></a></li>
 								<li><a href="/atom.xml"><span aria-hidden="true" class="icon-feed"></span></a></li>
 							</ul>
 							<div class="media-body">
-								<h3 class="media-heading"><a href="{{ HOME_PATH }}" class="hidden-phone">Kyle Ledbetter</a> {% if page.title %} <small> <span class="hidden-phone">/</span> {{ page.title }}</small>{% endif %}</h3>
+                <h3 class="media-heading">
+                  <span class="hidden-phone" style="color: red">/</span> {{ page.title }}
+                </h3>
 							</div>
 						</div>
 					</div>
