@@ -213,7 +213,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #942411;
+  color: #6495ED;
   text-decoration: underline;
 }
 a:focus {
@@ -645,8 +645,8 @@ pre code {
     width: 83.33333333333334%;
   }
   .span9 {
-    width: 75%;
-    margin-left: 25%;
+    width: 74%;
+    margin-left: 26%;
   }
   .span8 {
     width: 66.66666666666666%;
@@ -665,6 +665,7 @@ pre code {
   }
   .span3 {
     width: 25%;
+	height: 100%;
     position: fixed;
   }
   .span2 {
@@ -3583,6 +3584,7 @@ a.thumbnail:focus {
 }
 .media > .pull-left {
   margin-right: 10px;
+  width: 100%
 }
 .media > .pull-right {
   margin-left: 10px;
@@ -4733,7 +4735,7 @@ hr {
   border-bottom: 1px solid #f2f2f2;
 }
 .led-head {
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
@@ -5167,6 +5169,58 @@ footer div {
   font-size: 12px;
   font-weight: bold;
 }
+
+#sub-nav {
+margin-top: 10px;
+bottom: 20px;
+position: absolute;
+}
+
+#sub-nav .social{float:left;margin-right:15px}
+
+#sub-nav .social a.google {
+background: url('http://shashankmehta.in/images/social/google.png?1361180435') center no-repeat #c83d20;
+border: 1px solid #C83D20;
+}
+
+#sub-nav .social a.twitter {
+background: url('http://shashankmehta.in/images/social/twitter.png?1361180435') center no-repeat #55cff8;
+border: 1px solid #55CFF8;
+}
+
+#sub-nav .social a.github {
+background: url('http://shashankmehta.in/images/social/github.png?1361180435') center no-repeat #afb6ca;
+border: 1px solid #afb6ca;
+}
+
+#sub-nav .social a.rss {
+background: url('http://shashankmehta.in/images/social/rss.png?1361180435') center no-repeat #ef7522;
+border: 1px solid #EF7522;
+}
+
+#sub-nav .social a {
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-o-border-radius: 50%;
+-ms-border-radius: 50%;
+-khtml-border-radius: 50%;
+border-radius: 50%;
+display: -moz-inline-box;
+-moz-box-orient: vertical;
+display: inline-block;
+vertical-align: middle;
+text-indent: -9999px;
+margin-right: 15px;
+opacity: 0.5;
+width: 28px;
+height: 28px;
+-moz-transition: 0.3s;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+
+#sub-nav .social a:hover{opacity:1}
 .row:after {
   clear: both;
 }
