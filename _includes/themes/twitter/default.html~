@@ -59,7 +59,13 @@
 					  {% include JB/pages_list %}
 					</ul>
 
-					<nav id="sub-nav">
+				</div>
+				<div class="span9">
+					<div class="page-header">
+						<div class="media">
+							
+
+								<nav id="sub-nav">
 						<div class="social">
 							<a class="google" href="https://plus.google.com/109764126807838271120?rel=author" title="Google+">Google+</a>
 							<a class="twitter" href="http://twitter.com/leostatic" title="Twitter">Twitter</a>
@@ -68,18 +74,6 @@
 						</div>
 					</nav>
 
-				</div>
-				<div class="span9">
-					<div class="page-header">
-						<div class="media">
-							<ul class="nav nav-pills nav-social pull-right">
-								<li><a href="http://dribbble.com/kyleledbetter"><span aria-hidden="true" class="icon-dribbble"></span></a></li>
-                <li><a href="https://github.com/{{ site.author.github }}"><span aria-hidden="true" class="icon-github"></span></a></li>
-                <li><a href="https://twitter.com/{{ site.author.twitter }}"><span aria-hidden="true" class="icon-twitter"></span></a></li>
-								<li><a href="http://www.linkedin.com/pub/kyle-ledbetter/4/1b8/877/"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
-								<li><a href="mailto:cz.tinyao@gmail.com"><span aria-hidden="true" class="icon-mail"></span></a></li>
-								<li><a href="/atom.xml"><span aria-hidden="true" class="icon-feed"></span></a></li>
-							</ul>
 							<div class="media-body">
 								<h3 class="media-heading">
                   <span class="hidden-phone" style="color: red">/</span> 
@@ -95,15 +89,9 @@
 					<section class="clearfix">
 						{{ content }}
 					</section>
-					<footer>
+					<footer style="margin-top: 40px">
 						<hr />
-						<ul class="list-inline">
-							{% assign pages_list = site.pages %}
-							{% assign group = 'navigation' %}
-							{% include JB/pages_list %}
-							<li><a href="/z-sitemap.html">Sitemap</a></li>
-						</ul>
-						<div style="margin-bottom:10px;">
+						<div style="margin-bottom:10px; margin-top: 14px">
 							&copy; {{ site.author.name }} 2012
 							with a little love from <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a>, <a href="http://pages.github.com/" target="_blank">Github Pages</a>
 							and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>

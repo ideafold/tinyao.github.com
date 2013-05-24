@@ -89,15 +89,9 @@
 					<section class="clearfix">
 						{{ content }}
 					</section>
-					<footer>
+					<footer style="margin-top: 30px">
 						<hr />
-						<ul class="list-inline">
-							{% assign pages_list = site.pages %}
-							{% assign group = 'navigation' %}
-							{% include JB/pages_list %}
-							<li><a href="/z-sitemap.html">Sitemap</a></li>
-						</ul>
-						<div style="margin-bottom:10px;">
+						<div style="margin-bottom:10px; margin-top: 14px">
 							&copy; {{ site.author.name }} 2012
 							with a little love from <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="http://jekyllbootstrap.com" target="_blank">Jekyll Bootstrap</a>, <a href="http://pages.github.com/" target="_blank">Github Pages</a>
 							and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
