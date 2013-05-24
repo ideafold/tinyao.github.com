@@ -3601,6 +3601,13 @@ a.thumbnail:focus {
   overflow: hidden;
   zoom: 1;
 }
+
+.span3 .page-header .media-body > a {
+  color: #ddd;
+}
+.span3 .page-header .media-body > a:hover {
+  color: #33B5E5;
+}
 .media,
 .media .media {
   margin-top: 15px;

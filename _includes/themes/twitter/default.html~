@@ -48,9 +48,10 @@
 							<a class="pull-left media-object" href="{{ HOME_PATH }}">
 								<img src="/assets/themes/twitter/images/avatar.jpg" style="display:block; margin:0 auto;"></a>
 						</div>
-						<div class="media-body" style="margin-top:25px">
+						<div class="media-body" style="margin-top:15px">
+							<a href="{{ HOME_PATH }}">
 						    <h3 class="media-heading hidden-phone" style="text-align: center">{{ site.title }}</h3>
-						    <h3 class="media-heading visible-phone" style="text-align: center">{{ site.title }}</h3>
+						    <h3 class="media-heading visible-phone" style="text-align: center">{{ site.title }}</h3>						</a>
 						</div>
 					</div>
 					
