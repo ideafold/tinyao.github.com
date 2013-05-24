@@ -6,6 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
+
 <ul class="posts list-unstyled">
 
   {% capture post_year1 %}{{ 'now' | date: "%Y" }}{% endcapture %}
@@ -19,15 +20,14 @@ group: navigation
 		{% assign post_year1 = post_year2 %}
 		</section>
 		<h2>{{ post_year1 }}</h2>
-		<section class="archives">
-	{% endif %}
+		<section>
+  {% endif %}
 
 	<li>
-		<h3>
+		<h4>
 			<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
-			<small>{{ post.date | date_to_string }}</small>
-		</h3>
-		<hr />
+			<small style="float: right; margin-top: 3px">{{ post.date | date_to_string }}</small>
+		</h4>
 	</li>
   {% endfor %}
   </section>

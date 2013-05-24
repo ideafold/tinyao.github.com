@@ -209,7 +209,7 @@ textarea {
 }
 a {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-  color: #33B5E5;
+  color: #0099CC;
   text-decoration: none;
 }
 a:hover,
@@ -452,7 +452,7 @@ li {
 
 .list-unstyled section{
 	padding-left: 15%;
-	margin-top: -60px;
+	margin-top: -55px;
 	margin-bottom: 15px;
 }
 

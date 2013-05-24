@@ -209,7 +209,7 @@ textarea {
 }
 a {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-  color: #33B5E5;
+  color: #0099CC;
   text-decoration: none;
 }
 a:hover,
@@ -5195,7 +5195,6 @@ footer div {
 }
 
 #sub-nav {
-margin-top: 5px;
 position: relative;
 float: right;
 }
