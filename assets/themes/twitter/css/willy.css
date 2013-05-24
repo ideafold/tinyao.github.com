@@ -209,12 +209,12 @@ textarea {
 }
 a {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
-  color: #0099CC;
+  color: #666;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #FF4444;
+  color: #33B5E5;
   text-decoration: none;
 }
 a:focus {
@@ -285,6 +285,10 @@ img {
     page-break-after: avoid;
   }
 }
+.h3_c {
+ color: #aaa;   
+}
+
 p {
   margin: 0 0 10px;
 }
@@ -4738,11 +4742,10 @@ a {
 .sidebar .nav-list > .active > a,
 .sidebar .nav-list > .active > a:hover,
 .sidebar .nav-list > .active > a:focus {
-  color: #333333;
-  background-color: #eeeeee;
+  color: white;
+  background-color: transparent;
   border-color: #e1e1e1;
-  border-right: 3px solid #ac2320;
-  border-left: 2px solid #ac2320;
+  border-right: 5px solid #33B5E5;
 }
 .nav-social {
   margin-top: 4px;
@@ -5208,23 +5211,28 @@ float: right;
 
 #sub-nav .social{float:left;margin-right:15px}
 
-#sub-nav .social a.google {
-background: url('http://shashankmehta.in/images/social/google.png?1361180435') center no-repeat #c83d20;
-border: 1px solid #C83D20;
+#sub-nav .social a.weibo {
+background: url('../images/weibo.png') center no-repeat #e04c83;
+border: 1px solid #e04c83;
 }
 
 #sub-nav .social a.twitter {
-background: url('http://shashankmehta.in/images/social/twitter.png?1361180435') center no-repeat #55cff8;
+background: url('../images/twitter.png') center no-repeat #55cff8;
 border: 1px solid #55CFF8;
 }
 
+#sub-nav .social a.google {
+background: url('../images/google.png') center no-repeat #C83D20;
+border: 1px solid #C83D20;
+}
+
 #sub-nav .social a.github {
-background: url('http://shashankmehta.in/images/social/github.png?1361180435') center no-repeat #afb6ca;
+background: url('../images/github.png') center no-repeat #afb6ca;
 border: 1px solid #afb6ca;
 }
 
 #sub-nav .social a.rss {
-background: url('http://shashankmehta.in/images/social/rss.png?1361180435') center no-repeat #ef7522;
+background: url('../images/rss.png') center no-repeat #ef7522;
 border: 1px solid #EF7522;
 }
 
