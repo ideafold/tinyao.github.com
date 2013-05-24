@@ -10,7 +10,7 @@ group: navigation
 <ul class="posts list-unstyled">
 
   {% capture post_year1 %}{{ 'now' | date: "%Y" }}{% endcapture %}
-  <h3 class="h3_c">{{ post_year1 }}</h3>
+  
 
   <section>
   {% for post in site.posts %}
@@ -19,14 +19,14 @@ group: navigation
 	{% if post_year1 != post_year2 %}
 		{% assign post_year1 = post_year2 %}
 		</section>
-		<h3 class="h3_c">{{ post_year1 }}</h3>
+		
 		<section>
   {% endif %}
 
 	<li>
 		<h4>
-			<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> 
-			<small style="float: right; margin-top: 3px">{{ post.date | date_to_string }}</small>
+			<small style="float: right; margin-top: 4px">{{ post.date | date_to_string }}</small>
+			<a href="{{ BASE_PATH }}{{ post.url }}" >{{ post.title }}</a> 
 		</h4>
 	</li>
   {% endfor %}

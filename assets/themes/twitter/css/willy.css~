@@ -455,9 +455,7 @@ li {
 }
 
 .list-unstyled section{
-	padding-left: 15%;
-	margin-top: -48px;
-	margin-bottom: -10px;
+  margin: 0; 
 }
 
 .list-unstyled > section > li {
@@ -652,6 +650,8 @@ pre code {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -3602,10 +3602,12 @@ a.thumbnail:focus {
   zoom: 1;
 }
 
-.span3 .page-header .media-body .a{
-  color: #ddd
+.span3 .page-header .media-body > a {
+  color: #ddd;
 }
-
+.span3 .page-header .media-body > a:hover {
+  color: #33B5E5;
+}
 .media,
 .media .media {
   margin-top: 15px;
@@ -4744,14 +4746,26 @@ a {
   border-left: 0;
   color: #777;
 }
-.sidebar .nav-list > .active > a,
-.sidebar .nav-list > .active > a:hover,
-.sidebar .nav-list > .active > a:focus {
+
+.hidden-phone .nav-list > .active > a,
+.hidden-phone .nav-list > .active > a:hover,
+.hidden-phone .nav-list > .active > a:focus {
   color: white;
   background-color: transparent;
   border-color: #e1e1e1;
   border-right: 5px solid #33B5E5;
 }
+
+.visible-phone .nav-list > .active > a,
+.visible-phone .nav-list > .active > a:hover,
+.visible-phone .nav-list > .active > a:focus {
+  color: white;
+  background-color: transparent;
+  border-color: #e1e1e1;
+  margin-bottom: -5px;
+  border-bottom: 5px solid #33B5E5;
+}
+
 .nav-social {
   margin-top: 4px;
 }
@@ -5278,6 +5292,21 @@ article > ul{
 
 article > ul > li{
   line-height: 25px;
+}
+
+.sidebar .nav-list .visible-phone > .active > a,
+.sidebar .nav-list .visible-phone > .active > a:hover,
+.sidebar .nav-list .visible-phone > .active > a:focus {
+  color: white;
+  background-color: transparent;
+  border-color: #e1e1e1;
+  margin-bottom: -5px;
+  border-bottom: 5px solid #33B5E5;
+}
+
+.visible-phone .nav-list > li{
+  line-height: 25px;
+  float: left;
 }
 
 .havatar {

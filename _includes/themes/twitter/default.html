@@ -42,16 +42,34 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid">
-				<div class="span3 sidebar">
+				<div class="span3 sidebar hidden-phone">
 					<div class="page-header">
 						<div class="media havatar">
 							<a class="pull-left media-object">
 								<img src="/assets/themes/twitter/images/avatar.jpg" style="display:block; margin:0 auto;"></a>
 						</div>
-						<div class="media-body" style="margin-top:15px">
+						<div class="media-body" style="margin-top:15px; text-align:center">
 							<a href="{{ HOME_PATH }}">
 						    <h3 class="media-heading hidden-phone" style="text-align: center">{{ site.title }}</h3>
 						    <h3 class="media-heading visible-phone" style="text-align: center">{{ site.title }}</h3>						</a>
+						</div>
+					</div>
+					<ul class="nav nav-list">
+					  {% assign pages_list = site.pages | sort:"name" %}
+					  {% assign group = 'navigation' %}
+					  {% include JB/pages_list %}
+					</ul>
+				</div>
+
+				<div class="span3 sidebar visible-phone" style="margin-top: -30px; padding-top: 20px; background: #2f2f2f">
+					<div class="page-header">
+						<div class="media havatar">
+							<a class="pull-left media-object">
+								<img src="/assets/themes/twitter/images/avatar.jpg" style="display:block; margin:0 auto;"></a>
+						</div>
+						<div class="media-body" style="margin-top:15px; text-align:center">
+							<a href="{{ HOME_PATH }}">
+						    <h3 class="media-heading" style="text-align: center">{{ site.title }}</h3>						</a>
 						</div>
 					</div>
 					
@@ -61,8 +79,8 @@
 					  {% assign group = 'navigation' %}
 					  {% include JB/pages_list %}
 					</ul>
-
 				</div>
+
 				<div class="span9">
 					<div class="page-header">
 						<div class="media">
