@@ -2,8 +2,10 @@
 
   	<div class="well well-small">
   		<a href="{{ HOME_PATH }}"><img src="{{ ASSET_PATH }}twitter/images/kyle-ledbetter.jpg" class="img-circle" width="30"/></a> Kyle Ledbetter on {{ page.date | date_to_string }}
-  	</div>
-    {{ content }}
+    </div>
+    <article>
+      {{ content }}
+    </article>  
     <hr>
 	<ul class="pagination">
 	{% if page.previous %}

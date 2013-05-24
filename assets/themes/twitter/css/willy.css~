@@ -192,7 +192,7 @@ html {
 body {
   margin: 0;
   color: #333333;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -203,18 +203,19 @@ input,
 button,
 select,
 textarea {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
 a {
+  font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
   color: #33B5E5;
   text-decoration: none;
 }
 a:hover,
 a:focus {
   color: #FF4444;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted #333;
@@ -431,7 +432,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 20px;
+  line-height: 25px;
 }
 .list-unstyled,
 .list-inline {
@@ -448,6 +449,24 @@ li {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.list-unstyled section{
+	padding-left: 15%;
+	margin-top: -60px;
+	margin-bottom: 15px;
+}
+
+.list-unstyled > section > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-unstyled > h2{
+  line-height: auto;
+  margin-top: 0px;
+}
+
 dl {
   margin-bottom: 20px;
 }
@@ -5228,4 +5247,16 @@ transition: 0.3s;
 #sub-nav .social a:hover{opacity:1}
 .row:after {
   clear: both;
+}
+
+article {
+
+}
+
+article > ul{
+  padding-left: 30px;
+}
+
+article > ul > li{
+  line-height: 25px;
 }
