@@ -453,7 +453,7 @@ li {
 .list-unstyled section{
 	padding-left: 15%;
 	margin-top: -48px;
-	margin-bottom: 15px;
+	margin-bottom: -10px;
 }
 
 .list-unstyled > section > li {
