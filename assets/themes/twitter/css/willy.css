@@ -2488,7 +2488,7 @@ button.close {
 }
 .nav-list > li > a {
   margin-bottom: -1px;
-  border: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .nav-list > li:first-child > a {
@@ -4741,7 +4741,8 @@ a {
   color: #333333;
   background-color: #eeeeee;
   border-color: #e1e1e1;
-  border-right: 5px solid #ac2320;
+  border-right: 3px solid #ac2320;
+  border-left: 2px solid #ac2320;
 }
 .nav-social {
   margin-top: 4px;
@@ -4762,7 +4763,7 @@ a {
 }
 hr {
   border-top: 0;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #ddd;
 }
 .led-head {
   opacity: 0.7;
