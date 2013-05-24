@@ -432,7 +432,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 25px;
+  line-height: 20px;
 }
 .list-unstyled,
 .list-inline {
@@ -5195,9 +5195,9 @@ footer div {
 }
 
 #sub-nav {
-margin-top: 10px;
-bottom: 20px;
-position: absolute;
+margin-top: 5px;
+position: relative;
+float: right;
 }
 
 #sub-nav .social{float:left;margin-right:15px}

@@ -5195,9 +5195,8 @@ footer div {
 }
 
 #sub-nav {
-margin-top: 10px;
-bottom: 20px;
-position: absolute;
+position: relative;
+float: right;
 }
 
 #sub-nav .social{float:left;margin-right:15px}

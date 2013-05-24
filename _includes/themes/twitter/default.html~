@@ -45,7 +45,7 @@
 				<div class="span3 sidebar">
 					<div class="page-header">
 						<div class="media">
-							<a class="pull-left media-object" href="{{ HOME_PATH }}"><img src="/assets/themes/twitter/images/kyle-ledbetter.jpg" class="led-head img-circle" width="160" style="display:block; margin:0 auto;"></a>
+							<a class="pull-left media-object" href="{{ HOME_PATH }}"><img src="/assets/themes/twitter/images/avatar.jpg" class="led-head img-circle" width="160" style="display:block; margin:0 auto;"></a>
 						</div>
 						<div class="media-body" style="margin-top:25px">
 						    <h3 class="media-heading hidden-phone" style="text-align: center">{{ site.title }}</h3>
@@ -82,7 +82,12 @@
 							</ul>
 							<div class="media-body">
 								<h3 class="media-heading">
-								  <span class="hidden-phone" style="color: red">/</span> {{ page.title }}
+                  <span class="hidden-phone" style="color: red">/</span> 
+                  {% if page.id %}
+                    Blog
+                  {% else %}
+                    {{ page.title }}
+                  {% endif %}
 								</h3>
 							</div>
 						</div>

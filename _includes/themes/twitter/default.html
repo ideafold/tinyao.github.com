@@ -59,7 +59,13 @@
 					  {% include JB/pages_list %}
 					</ul>
 
-					<nav id="sub-nav">
+				</div>
+				<div class="span9">
+					<div class="page-header">
+						<div class="media">
+							
+
+								<nav id="sub-nav">
 						<div class="social">
 							<a class="google" href="https://plus.google.com/109764126807838271120?rel=author" title="Google+">Google+</a>
 							<a class="twitter" href="http://twitter.com/leostatic" title="Twitter">Twitter</a>
@@ -68,21 +74,14 @@
 						</div>
 					</nav>
 
-				</div>
-				<div class="span9">
-					<div class="page-header">
-						<div class="media">
-							<ul class="nav nav-pills nav-social pull-right">
-								<li><a href="http://dribbble.com/kyleledbetter"><span aria-hidden="true" class="icon-dribbble"></span></a></li>
-                <li><a href="https://github.com/{{ site.author.github }}"><span aria-hidden="true" class="icon-github"></span></a></li>
-                <li><a href="https://twitter.com/{{ site.author.twitter }}"><span aria-hidden="true" class="icon-twitter"></span></a></li>
-								<li><a href="http://www.linkedin.com/pub/kyle-ledbetter/4/1b8/877/"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
-								<li><a href="mailto:cz.tinyao@gmail.com"><span aria-hidden="true" class="icon-mail"></span></a></li>
-								<li><a href="/atom.xml"><span aria-hidden="true" class="icon-feed"></span></a></li>
-							</ul>
 							<div class="media-body">
 								<h3 class="media-heading">
-								  <span class="hidden-phone" style="color: red">/</span> {{ page.title }}
+                  <span class="hidden-phone" style="color: red">/</span> 
+                  {% if page.id %}
+                    Blog
+                  {% else %}
+                    {{ page.title }}
+                  {% endif %}
 								</h3>
 							</div>
 						</div>
