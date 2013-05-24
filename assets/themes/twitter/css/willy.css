@@ -196,7 +196,7 @@ body {
   font-size: 14px;
   font-size: 1.4rem;
   line-height: 1.5;
-  background-color: #ffffff;
+  background-color: whitesmoke;
 }
 body,
 input,
@@ -688,6 +688,7 @@ pre code {
     width: 20%;
 	height: 100%;
     position: fixed;
+ 	background: #2f2f2f;
   }
   .span2 {
     width: 16.666666666666664%;
@@ -3608,6 +3609,9 @@ a.thumbnail:focus {
 }
 .media-heading {
   margin: 0 0 5px;
+}
+.media-body > h3{
+    color: #ddd;
 }
 .media > .pull-left {
   margin-right: 10px;

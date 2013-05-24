@@ -453,7 +453,7 @@ li {
 .list-unstyled section{
 	padding-left: 15%;
 	margin-top: -48px;
-	margin-bottom: 15px;
+	margin-bottom: -10px;
 }
 
 .list-unstyled > section > li {
@@ -688,6 +688,7 @@ pre code {
     width: 20%;
 	height: 100%;
     position: fixed;
+ 	background: #2f2f2f;
   }
   .span2 {
     width: 16.666666666666664%;
@@ -3608,6 +3609,9 @@ a.thumbnail:focus {
 }
 .media-heading {
   margin: 0 0 5px;
+}
+.media-body > h3{
+    color: #ddd;
 }
 .media > .pull-left {
   margin-right: 10px;
