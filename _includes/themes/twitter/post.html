@@ -6,7 +6,6 @@
     <article>
       {{ content }}
     </article>  
-    <hr>
 	<ul class="pagination">
 	{% if page.previous %}
 	<li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
@@ -20,11 +19,9 @@
 	<li class="next disabled"><a>Next &rarr;</a>
 	{% endif %}
 	</ul>
-    <hr>
     {% include JB/comments %}
   
   {% unless page.tags == empty %}
-    <hr />
     <ul class="list-inline list-labels">
 	    {% assign tags_list = page.tags %}
 	    {% include JB/tags_list %}
