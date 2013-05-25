@@ -2,7 +2,7 @@
 layout: post
 title: "My Jekyll configuration"
 description: ""
-category: 技术
+category: tech
 tags: [Jekyll]
 ---
 
