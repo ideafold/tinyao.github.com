@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Gitlab Installation Guide"
+title: "GitLab Installation Guide"
 description: ""
 category: 
-tags: []
+tags: [GitLab, Install, Git, Ruby]
 ---
 {% include JB/setup %}
 
