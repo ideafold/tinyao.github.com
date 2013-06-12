@@ -205,7 +205,7 @@ select,
 textarea {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 a {
   font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
@@ -357,6 +357,7 @@ h6 {
   font-weight: 300;
   line-height: 20px;
   text-rendering: optimizelegibility;
+  color: #616366;
 }
 h1 small,
 h2 small,
