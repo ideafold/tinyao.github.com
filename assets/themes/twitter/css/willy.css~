@@ -290,7 +290,7 @@ img {
 }
 
 p {
-  margin: 0 0 10px;
+  margin: 0 0 15px;
 }
 .lead {
   margin-bottom: 20px;

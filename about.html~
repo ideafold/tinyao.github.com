@@ -9,7 +9,7 @@ weight : 5
 
 <div class="header">
 	<img src="{{ ASSET_PATH }}twitter/images/avatar.png" class="avatar img-rounded hidden-phone" />
-	<div class="well-me well-me-small">
+	<div class="well well-small">
 		<div class="row-fluid clearfix">
 			<div class="span8">
 				<ul class="list-unstyled">
