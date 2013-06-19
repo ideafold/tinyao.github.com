@@ -97,8 +97,8 @@ $(document).ready(function () {
 <script type="text/javascript">
     var feed = new Instafeed({
 		get: "user",
-        userId: 'tinyao',
-        clientId: '29993c23b6e345e88c8ca9fb38a5e7a0'
+        userId: '32137561',
+        accessToken: '29993c23b6e345e88c8ca9fb38a5e7a0'
     });
     feed.run();
 </script>
