@@ -92,12 +92,12 @@ $(document).ready(function () {
 </script>
 		
 
-<script src="{{ ASSET_PATH }}twitter/js/instafeed.min.js"></script>
+<script src="{{ ASSET_PATH }}twitter/js/instafeed.js"></script>
 
 <script type="text/javascript">
     var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
+        get: 'user',
+        tagName: 32137561,
         clientId: '29993c23b6e345e88c8ca9fb38a5e7a0'
     });
     feed.run();
