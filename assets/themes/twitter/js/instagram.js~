@@ -271,7 +271,7 @@ Instagram.prototype.getFeed = function (user, callback, opt_preload) {
  *     function on the collection to preload the images separately.
  */
 Instagram.prototype.getLikes = function (user, callback, opt_preload) {
-  this.mediaRequest_('/users/' + user + '/feeds',
+  this.mediaRequest_('/users/' + user + '/media/liked',
       callback,
       !!opt_preload);
 };
