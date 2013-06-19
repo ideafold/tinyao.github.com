@@ -679,7 +679,8 @@ pre code {
     width: 58.333333333333336%;
   }
   .span6 {
-    width: 50%;
+    width: 45%;
+    margin-right: 5%;
   }
   .span5 {
     width: 41.66666666666667%;
