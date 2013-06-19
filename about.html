@@ -73,7 +73,6 @@ weight : 5
 <!-- Scripties -->
 <script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
 <script src="{{ ASSET_PATH }}twitter/js/jquery.jribbble-1.0.0.ugly.js"></script>
-<script src="{{ ASSET_PATH }}twitter/js/instagram.js"></script>
 
 <script>
 $(document).ready(function () {	
@@ -92,23 +91,14 @@ $(document).ready(function () {
 });
 </script>
 		
-<script>
-// Get an Instagram API client.
-var instagram = new Instagram('29993c23b6e345e88c8ca9fb38a5e7a0');
 
-// Make sure the current user has been authenticated to Instagram.
-// If the user is not authenticated, the browser will be redirected to
-// Instagram's authentication page, then redirected back to this page.
-if (!instagram.authenticate()) {
-  return;
-}
+<script src="{{ ASSET_PATH }}twitter/js/instafeed.min.js"></script>
 
-// Get the most recent images of the current user, preloaded.
-instagram.getLikes('self', function (images) {
-  for (var i = 0, len = images.length; i < len; i++) {
-    var img = document.createElement('img');
-    img.src = images[i].imageUrl;
-    document.body.appendChild(img);
-  }
-}, true);
+<script type="text/javascript">
+    var feed = new Instafeed({
+		get: "user",
+        userId: 'tinyao',
+        clientId: '29993c23b6e345e88c8ca9fb38a5e7a0'
+    });
+    feed.run();
 </script>
