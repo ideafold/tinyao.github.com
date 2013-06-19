@@ -5377,7 +5377,8 @@ margin:20px auto;
 
 #instafeed a{
 float:left;
-margin-bottom: margin-bottom;
+width: 220px;
+margin-bottom: 30px;
 }
 
 #instafeed a:hover img{
@@ -5387,5 +5388,6 @@ margin-bottom: margin-bottom;
 #instafeed img{
 width:auto;max-width:100%;
 background-color: #555;
+margin: 5px;
 padding: 5px;}
 

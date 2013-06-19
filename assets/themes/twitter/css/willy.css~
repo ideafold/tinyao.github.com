@@ -5376,7 +5376,9 @@ margin:20px auto;
 }
 
 #instafeed a{
-float:left
+float:left;
+width: 220px;
+margin-bottom: 30px;
 }
 
 #instafeed a:hover img{
