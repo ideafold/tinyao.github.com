@@ -5376,12 +5376,16 @@ margin:20px auto;
 }
 
 #instafeed a{
-float:left
+float:left;
+margin-bottom: margin-bottom;
 }
 
 #instafeed a:hover img{
 -webkit-transform:scale .8;transform:scale .8
 }
 
-#instafeed img{width:auto;max-width:100%}
+#instafeed img{
+width:auto;max-width:100%;
+background-color: #555;
+padding: 5px;}
 

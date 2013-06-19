@@ -5370,8 +5370,7 @@ text-align:left
 #instafeed{
 overflow:hidden;
 zoom:1;
-width:200px;
-max-width:95%;
+width:100%;
 margin:20px auto;
 -webkit-transition:width 1s ease-in-out,margin .25s ease-in-out;-moz-transition:width 1s ease-in-out,margin .25s ease-in-out;transition:width 1s ease-in-out,margin .25s ease-in-out
 }
@@ -5384,5 +5383,8 @@ float:left
 -webkit-transform:scale .8;transform:scale .8
 }
 
-#instafeed img{width:auto;max-width:100%}
+#instafeed img{
+width:auto;max-width:100%;
+background-color: #555;
+padding: 5px;}
 
