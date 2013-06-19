@@ -92,13 +92,18 @@ $(document).ready(function () {
 </script>
 		
 
-<script src="{{ ASSET_PATH }}twitter/js/instafeed.js"></script>
+<div id="instafeed"></div>
 
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        tagName: 32137561,
-        clientId: '29993c23b6e345e88c8ca9fb38a5e7a0'
-    });
-    feed.run();
-</script>
+	<script src="{{ ASSET_PATH }}twitter/js/instafeed.js"></script>
+	<script type="text/javascript">
+	    var feed = new Instafeed({
+			get: 'user',
+			userId: 32137561,
+		    accessToken: '32137561.29993c2.2cea911989874c12996a129f7454b3af',
+			link: 'true',
+			clientId: '29993c23b6e345e88c8ca9fb38a5e7a0',
+			limit: '60'
+	    });
+	    feed.run();
+
+	</script>
