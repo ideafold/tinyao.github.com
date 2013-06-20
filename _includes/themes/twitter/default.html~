@@ -98,6 +98,7 @@
 							<div class="media-body title-header">
 								<h3 class="media-heading" style="color: gray">
 								  {% if page.id %}
+								    Blog 
 									<span class="hidden-phone" style="color: red; font-size: 2.2rem">$</span>
 								    <a href="/">cd ..</a>
 								  {% else %}

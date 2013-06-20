@@ -5435,3 +5435,7 @@ transition: all 0.2s ease-in-out;
 .proj a {
   color: #006396;
 }
+
+.title-header a {
+  font-family: "Open Sans Light", Helvetica, Arial, sans-serif;
+}
