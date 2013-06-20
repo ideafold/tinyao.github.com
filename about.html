@@ -59,6 +59,9 @@ weight : 5
 	<div class="span6">
 		<h3 class="page-header">Recent Instagram</h3>
 	</div>
+	<div class="span6">
+		<h3 class="page-header">Recent Douban</h3>
+	</div>
 </div>
 
 <section id="is-a-photographer" style="width:50%">
@@ -78,5 +81,27 @@ weight : 5
 	    feed.run();
 
 	</script>
+</section>
 
+<section id="is-a-photographer" style="float:right; width:50%">
+<!-- Scripties -->
+<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}twitter/js/jquery.jribbble-1.0.0.ugly.js"></script>
+
+<script>
+$(document).ready(function () {	
+	$.jribbble.getShotsByPlayerId('kyleledbetter', function (playerShots) {
+    var html = [];
+
+    $.each(playerShots.shots, function (i, shot) {
+        html.push('<li>');
+        html.push('<a href="' + shot.url + '">');
+        html.push('<img class="img-thumbnail" src="' + shot.image_teaser_url + '" ');
+        html.push('alt="' + shot.title + '"> </a> </li>');
+    });
+
+    $('#shotsByPlayerId').html(html.join(''));
+	}, {page: 1, per_page: 6});
+});
+</script>
 </section>
