@@ -5377,7 +5377,7 @@ margin:20px auto;
 
 #instafeed a{
 float:left;
-margin-right: 50px;
+margin-right: 35px;
 margin-bottom: 30px;
 }
 
@@ -5386,7 +5386,7 @@ margin-bottom: 30px;
 }
 
 #instafeed img{
-width:auto;
+width:130px;
 max-width:100%;
 padding: 4px;
 border: 1px solid #ccc;

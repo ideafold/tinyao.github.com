@@ -73,7 +73,7 @@ weight : 5
 			clientId: '29993c23b6e345e88c8ca9fb38a5e7a0',
 			link: 'true',
 			resolution: 'low_resolution',
-			limit: '12'
+			limit: '10'
 	    });
 	    feed.run();
 
