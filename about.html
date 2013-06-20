@@ -57,40 +57,10 @@ weight : 5
 </div>
 <div class="row-fluid">
 	<div class="span6">
-		<h3 class="page-header">Recent Blogs</h3>
-		<ul class="posts list-unstyled">
-		  {% for post in site.posts %}
-		    <li><span class="muted pull-right">{{ post.date | date_to_string }}</span> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><hr /></li>
-		  {% endfor %}
-		</ul>
-	</div>
-	<div class="span6">
-		<h3 class="page-header">Recent Dribbble Shots</h3>
-		<ul id="shotsByPlayerId" class="shotList list-inline"></ul>
+		<h3 class="page-header">Recent Instagram</h3>
 	</div>
 </div>
 
-<!-- Scripties -->
-<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
-<script src="{{ ASSET_PATH }}twitter/js/jquery.jribbble-1.0.0.ugly.js"></script>
-
-<script>
-$(document).ready(function () {	
-	$.jribbble.getShotsByPlayerId('kyleledbetter', function (playerShots) {
-    var html = [];
-
-    $.each(playerShots.shots, function (i, shot) {
-        html.push('<li>');
-        html.push('<a href="' + shot.url + '">');
-        html.push('<img class="img-thumbnail" src="' + shot.image_teaser_url + '" ');
-        html.push('alt="' + shot.title + '"> </a> </li>');
-    });
-
-    $('#shotsByPlayerId').html(html.join(''));
-	}, {page: 1, per_page: 6});
-});
-</script>
-		
 <section id="is-a-photographer">
 <div id="instafeed"></div>
 
@@ -100,9 +70,10 @@ $(document).ready(function () {
 			get: 'user',
 			userId: 32137561,
 		    accessToken: '32137561.29993c2.2cea911989874c12996a129f7454b3af',
-			link: 'true',
 			clientId: '29993c23b6e345e88c8ca9fb38a5e7a0',
-			limit: '60'
+			link: 'true',
+			resolution: 'low_resolution',
+			limit: '10'
 	    });
 	    feed.run();
 
