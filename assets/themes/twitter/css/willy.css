@@ -5415,3 +5415,9 @@ border-radius: 0px;
 -o-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
 }
+
+.label-primary-resume[href],
+.badge-primary-resume[href] {
+  background-color: #777;
+  margin-right: 10px;
+}

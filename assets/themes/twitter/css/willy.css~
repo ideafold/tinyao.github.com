@@ -5402,7 +5402,8 @@ transition: all 0.2s ease-in-out;
 #douban a{
 float:left;
 margin-right: 28px;
-margin-bottom: 28px;
+margin-bottom: 23px;
+margin-top: -1px;
 }
 
 #douban img{
@@ -5413,4 +5414,9 @@ border-radius: 0px;
 -moz-transition: all 0.2s ease-in-out;
 -o-transition: all 0.2s ease-in-out;
 transition: all 0.2s ease-in-out;
+}
+
+.label-primary-resume[href],
+.badge-primary-resume[href] {
+  background-color: #777;
 }

@@ -11,31 +11,16 @@ weight : 5
 	
 	<div class="well-me well-me-small">
 		<div class="row-fluid clearfix">
-			<div class="span8">
-				<ul class="list-unstyled">
-					<li><strong>Principal User Experience Designer</strong></li>
-					<li><span aria-hidden="true" class="icon-suitcase"></span> MetaScale (Sears Brands LLC.) </li>
-				</ul>
-			</div>
-			<div class="span4">
-				<ul class="list-unstyled">
-					<li><strong>Austin, Texas</strong></li>
-					<li><span aria-hidden="true" class="icon-location"></span> originally from Baton Rouge, LA</li>
-				</ul>
-			</div>
+			<p> I am currently a senior undergradute of Xidian University (XDU), majoring in Telecommunication Engineering. </p>
+			<p> Now I am free as an Android App developer. I like programming & the spirit of hacking.  I'm gradually becoming an Open Source Lover. In the following months, i plan to learn something related to web. Meanwhile, Python is another language i'd like to grasp. I hope i can create a beautiful & meaningful app during the rest semester.</p>
+			<a href="./share/ycz.pdf" class="label label-primary-resume">Resume.pdf</a>
+			<a href="./share/ycz.jpg" class="label label-primary-resume">Resume.jpg</a>
 		</div>
 	</div>
+
 	<div class="well-me well-me-small">
 		<div class="row-fluid clearfix">
-			<div class="span8">
-				<ul class="list-unstyled">
-					<li><span aria-hidden="true" class="icon-console"></span> UX/UI Design</li>
-					<li><span aria-hidden="true" class="icon-html5"></span> HTML5/CSS3/LESS/Bootstrap</li>
-					<li><span aria-hidden="true" class="icon-joomla"></span> Joomla User Experience</li>
-					<li><span aria-hidden="true" class="icon-paint-format"></span> Graphic Designer</li>
-				</ul>
-			</div>
-			<div class="span4">
+			<div>
 				<ul class="list-inline list-labels">
 					<li><span class="label label-info">osx</span></li>
 					<li><span class="label label-success">css</span></li>
@@ -78,7 +63,7 @@ weight : 5
 			clientId: '29993c23b6e345e88c8ca9fb38a5e7a0',
 			link: 'true',
 			resolution: 'low_resolution',
-			limit: '12'
+			limit: '9'
 	    });
 	    feed.run();
 
