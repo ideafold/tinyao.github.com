@@ -31,10 +31,10 @@ weight : 5
 					<li><span class="label label-primary">ui</span></li>
 					<li><span class="label label-success">app</span></li>
 					<li><span class="label label-success">nexus</span></li>
-					<li class="hidden-tablet"><span class="label label-info">ruby</span></li>
-					<li class="hidden-tablet"><span class="label label-info">java</span></li>
-					<li class="hidden-tablet"><span class="label label-info">python</span></li>
-					<li class="hidden-tablet"><span class="label label-warning">js</span></li>
+					<li class="hidden-tablet"><span class="label label-info">iphone</span></li>
+					<li class="hidden-tablet"><span class="label label-info">ipad</span></li>
+					<li class="hidden-tablet"><span class="label label-info">retina</span></li>
+					<li class="hidden-tablet"><span class="label label-warning">jquery</span></li>
 				</ul>
 			</div>
 		</div>
