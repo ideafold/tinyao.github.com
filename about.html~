@@ -60,11 +60,13 @@ weight : 5
 		<h3 class="page-header">Recent Instagram</h3>
 	</div>
 	<div class="span6">
-		<h3 class="page-header">Recent Douban</h3>
+		<h3 class="page-header" style="padding-left: 5%">Recent Douban</h3>
 	</div>
 </div>
 
-<section id="is-a-photographer" style="width:50%">
+
+<div class="row-fluid">
+<div id="is-a-photographer" class="span_6" style="margin-right: 5%;">
 <div id="instafeed"></div>
 
 	<script src="{{ ASSET_PATH }}twitter/js/instafeed.js"></script>
@@ -81,27 +83,8 @@ weight : 5
 	    feed.run();
 
 	</script>
-</section>
+</div>
 
-<section id="is-a-photographer" style="float:right; width:50%">
-<!-- Scripties -->
-<script src="{{ ASSET_PATH }}twitter/js/jquery.min.js"></script>
-<script src="{{ ASSET_PATH }}twitter/js/jquery.jribbble-1.0.0.ugly.js"></script>
-
-<script>
-$(document).ready(function () {	
-	$.jribbble.getShotsByPlayerId('kyleledbetter', function (playerShots) {
-    var html = [];
-
-    $.each(playerShots.shots, function (i, shot) {
-        html.push('<li>');
-        html.push('<a href="' + shot.url + '">');
-        html.push('<img class="img-thumbnail" src="' + shot.image_teaser_url + '" ');
-        html.push('alt="' + shot.title + '"> </a> </li>');
-    });
-
-    $('#shotsByPlayerId').html(html.join(''));
-	}, {page: 1, per_page: 6});
-});
-</script>
-</section>
+<div id="douban" class="span_6">
+<script type="text/javascript" src="http://www.douban.com/service/badge/yaoapp/?show=collection&amp;n=12&amp;columns=4&amp;hidelogo=yes&amp;hideself=yes&amp;cat=movie|book|music" ></script>
+</div>

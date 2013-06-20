@@ -682,6 +682,9 @@ pre code {
     width: 45%;
     margin-right: 5%;
   }
+  .span_6 {
+    width: 47%;
+  }
   .span5 {
     width: 41.66666666666667%;
   }
@@ -5371,14 +5374,13 @@ text-align:left
 overflow:hidden;
 zoom:1;
 width:100%;
-margin:20px auto;
 -webkit-transition:width 1s ease-in-out,margin .25s ease-in-out;-moz-transition:width 1s ease-in-out,margin .25s ease-in-out;transition:width 1s ease-in-out,margin .25s ease-in-out
 }
 
 #instafeed a{
 float:left;
-margin-right: 35px;
-margin-bottom: 30px;
+margin-right: 28px;
+margin-bottom: 28px;
 }
 
 #instafeed a:hover img{
@@ -5386,7 +5388,7 @@ margin-bottom: 30px;
 }
 
 #instafeed img{
-width:130px;
+width:100px;
 max-width:100%;
 padding: 4px;
 border: 1px solid #ccc;
@@ -5397,3 +5399,18 @@ border-radius: 0px;
 transition: all 0.2s ease-in-out;
 }
 
+#douban a{
+float:left;
+margin-right: 28px;
+margin-bottom: 28px;
+}
+
+#douban img{
+padding: 4px;
+border: 1px solid #ccc;
+border-radius: 0px;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
