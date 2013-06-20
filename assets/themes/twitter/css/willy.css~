@@ -5419,4 +5419,19 @@ transition: all 0.2s ease-in-out;
 .label-primary-resume[href],
 .badge-primary-resume[href] {
   background-color: #777;
+  margin-right: 10px;
+}
+
+.proj h2 {
+  text-shadow: 0 1px 1px #fff;  
+  background: #edf0f2;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #bbb;
+  font-size: 2rem;
+  line-height: 30px;
+} 
+
+.proj a {
+  color: #33B5E5;
 }

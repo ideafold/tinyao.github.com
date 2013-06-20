@@ -7,14 +7,18 @@ weight : 5
 ---
 {% include JB/setup %}
 
+> I am currently a senior undergradute of Xidian University (XDU), majoring in Telecommunication Engineering.
+>
+> Now I am free as an Android App developer. I like programming & the spirit of hacking.  I'm gradually becoming an Open Source Lover. In the following months, i plan to learn something related to web. Meanwhile, Python is another language i'd like to grasp. I hope i can create a beautiful & meaningful app during the rest semester.
+
 <div class="header">
 	
 	<div class="well-me well-me-small">
 		<div class="row-fluid clearfix">
 			<p> I am currently a senior undergradute of Xidian University (XDU), majoring in Telecommunication Engineering. </p>
 			<p> Now I am free as an Android App developer. I like programming & the spirit of hacking.  I'm gradually becoming an Open Source Lover. In the following months, i plan to learn something related to web. Meanwhile, Python is another language i'd like to grasp. I hope i can create a beautiful & meaningful app during the rest semester.</p>
-			<a href="./share/ycz.pdf" class="label label-primary-resume">Resume.pdf</a>
-			<a href="./share/ycz.jpg" class="label label-primary-resume">Resume.jpg</a>
+			<a href="./share/ycz.pdf" target="_blank" class="label label-primary-resume">Resume.pdf</a>
+			<a href="./share/ycz.jpg" target="_blank" class="label label-primary-resume">Resume.jpg</a>
 		</div>
 	</div>
 

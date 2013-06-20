@@ -1,0 +1,29 @@
+---
+layout: page
+title : Projects
+header : Projects
+group: navigation
+---
+{% include JB/setup %}
+
+Actually, i have not done any good project. I am just still a newby on the way.
+
+<article class="proj">
+
+<h2>tinySide</h2>
+
+<p>A custom responsive theme for myblog powerd by Jekyll &amp; Bootstrap，based on theme of <a href="http://kyleledbetter.com">kyleledbetter.com</a>. it shows nice on both pc and phone. See the source on my github repo <a href="https://github.com/tinyao/tinyao.github.com">here</a> /2013</p>
+
+<h2>优选365</h2>
+
+<p>A taobaoke site based on <a href="http://pintuxiu.com">pintuxiu</a>. /2012</p>
+
+<h2>Smart-NetLight</h2>
+
+<p>An android client used to control LEDs (single or in group). The LEDs are organized using DALI protocol, with a address for each one. <a href="https://github.com/tinyao/smart-NetLight">source code</a>, <a href="https://github.com/tinyao/smart-NetLight/raw/master/screenShot.png">screenshot</a>/2012</p>
+
+<h2>Security Box</h2>
+
+<p>An android app for some security issues on the smart phone, manage accounts and passwords, guard against theft, file and sms encryption, etc. <a href="app.net/s-box">detail</a> /2010</p>
+
+<article>
